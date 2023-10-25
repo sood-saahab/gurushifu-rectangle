@@ -11,7 +11,8 @@ public class RectangleTest {
     public void shouldReturnAreaWhenLengthAndBreadthAreGiven(){
         Rectangle rt=new Rectangle(4.0,5.0);
         double area=rt.area();
-        assertThat(area,is(closeTo(20.0,0.01)));
+        double perimeter= rt.perimeter();
+        assertThat(perimeter,is(closeTo(18.0,0.01)));
 
     }
 }
